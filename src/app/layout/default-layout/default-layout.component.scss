@@ -1,0 +1,27 @@
+.nav-header {
+    display: flex;
+    flex-direction: row;
+    height: 3rem;
+    align-items: stretch;
+    background-color: #333333;
+}
+
+.nav-header > a {
+    text-decoration: none;
+    background-color: inherit;
+    color: white;
+    padding: 1rem;
+    transition: all ease-in-out 0.2s;
+}
+
+.nav-header > a:hover {
+    background-color: rgb(66, 62, 62);
+    border-bottom: 0.3rem solid #ffffff;
+  }
+  
+
+.main-container {
+    margin-left: 1rem;
+    margin-right: 1rem;  
+}
+
