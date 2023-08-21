@@ -2,20 +2,20 @@ import { Action, createReducer, on } from "@ngrx/store";
 import { loadProjects, loadProjectsFailure, loadProjectsSuccess } from '../actions/project.actions'
 import { IProject } from "@app/data/intefaces/project";
 
-export interface State {
+export interface ProjectsState {
     projects: IProject[];
     error: string | null;
     loading: boolean;
 };
 
 export const projectFeatureKey = 'project';
-const initialState: State = {
+const initialState: ProjectsState = {
     projects: [],
     error: null,
     loading: false
 };
 
-export const projectReducer = createReducer<State>(initialState, 
+export const projectReducer = createReducer<ProjectsState>(initialState, 
  on(loadProjects, (state) => ({
     ...state,
     loading: false,
@@ -33,6 +33,6 @@ export const projectReducer = createReducer<State>(initialState,
  }))
 );
 
-export function reducer(state: State | undefined, action: Action) {
+export function reducer(state: ProjectsState | undefined, action: Action) {
     return projectReducer(state, action);
 }
