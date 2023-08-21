@@ -1,0 +1,17 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ProjectsListPageComponent } from './projects-list-page/projects-list-page.component';
+import { ProjectPagesRoutingModule } from './project-pages-routing.module';
+
+
+
+@NgModule({
+  declarations: [
+    ProjectsListPageComponent
+  ],
+  imports: [
+    CommonModule,
+    ProjectPagesRoutingModule
+  ]
+})
+export class ProjectPagesModule { }
