@@ -12,7 +12,6 @@ import { ProjectStateModule } from '@app/features/project/state';
   imports: [
     CommonModule,
     ProjectPagesRoutingModule,
-    ProjectStateModule
   ]
 })
 export class ProjectPagesModule { }

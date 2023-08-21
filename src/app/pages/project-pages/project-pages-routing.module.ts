@@ -4,7 +4,7 @@ import { ProjectsListPageComponent } from "./projects-list-page/projects-list-pa
 
 const routes: Routes = [
     {
-        path: 'projects',
+        path: '',
         component: ProjectsListPageComponent,
         title: 'My projects'
     }

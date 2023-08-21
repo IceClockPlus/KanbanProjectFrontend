@@ -19,6 +19,9 @@ const routes: Routes = [
           (c) => c.BoardComponent
         ),
         title: 'Board'
+      }, {
+        path: 'projects',
+        loadChildren:() => import('./pages/project-pages/project-pages.module').then((m) => m.ProjectPagesModule)
       }
     ]
   }
