@@ -13,12 +13,16 @@ const routes: Routes = [
     component: DefaultLayoutComponent,
     children: [
       {
+        // path: 'board',
+        // loadComponent: () => 
+        // import('./views/board/board.component').then(
+        //   (c) => c.BoardComponent
+        // ),
+        // title: 'Board'
         path: 'board',
-        loadComponent: () => 
-        import('./views/board/board.component').then(
-          (c) => c.BoardComponent
-        ),
-        title: 'Board'
+        loadChildren:() => import('./modules/board/board.module').then(
+          (m) => m.BoardModule
+        )
       }
     ]
   }
