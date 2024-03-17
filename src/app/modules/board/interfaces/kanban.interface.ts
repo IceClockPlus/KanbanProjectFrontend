@@ -1,11 +1,10 @@
 export interface TaskItem {
     code: string;
     name: string;
-    description: string;
     points: number | null;
 }
 
-export interface BoardDetail {
+export interface Board {
     id: string;
     name: string;
     stages: Array<BoardStage>;

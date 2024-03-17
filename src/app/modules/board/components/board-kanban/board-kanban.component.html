@@ -1,1 +1,19 @@
 <p>board-kanban works!</p>
+<div class="kanban-board" cdkDropListGroup>
+    <div class="row" *ngFor="let stage of board.stages">
+        <div cdkDropList [cdkDropListData]="stage.tasks"
+        (cdkDropListDropped)="drop($event)">
+            <div class="column-title">
+                {{ stage.name }}
+            </div>
+            <div cdkDrag [cdkDragData]="task" *ngFor="let task of stage.tasks">
+                <mat-card>
+                    <mat-card-title>{{task.name}}</mat-card-title>
+                    <mat-card-content>
+                        {{task.name}}
+                    </mat-card-content>
+                </mat-card>
+            </div>    
+        </div>
+    </div>
+</div>

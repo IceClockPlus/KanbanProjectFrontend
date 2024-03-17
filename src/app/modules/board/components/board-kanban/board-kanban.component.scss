@@ -1,0 +1,19 @@
+.kanban-board {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+
+    .row{
+        min-height: 500px;
+        width: 100%;
+        margin: 1rem;
+        background-color: rgb(245, 245, 245);
+    }
+}
+
+.column-title {
+    text-align: center;
+    font-weight: bold;
+    height: 3rem;
+}
