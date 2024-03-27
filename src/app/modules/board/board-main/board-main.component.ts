@@ -37,8 +37,13 @@ export class BoardMainComponent implements OnInit {
           ]
         },
         {
-          name: 'Done',
+          name: 'In review',
           stageNumber: 3,
+          tasks: []
+        },
+        {
+          name: 'Done',
+          stageNumber: 4,
           tasks: [
             {
               code: 'TKS-14',
@@ -55,7 +60,4 @@ export class BoardMainComponent implements OnInit {
   ngOnInit(): void {
       
   }
-
-
-
 }

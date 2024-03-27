@@ -17,3 +17,23 @@
     font-weight: bold;
     height: 3rem;
 }
+
+.m-1 {
+    margin: 1rem;
+}
+
+.cdk-drag-animating {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.card{
+    margin: 1rem;
+    border-bottom: solid 1px #ccc;
+    background: white;
+}
+
+.card-placeholder {
+    background: #ccc;
+    border: dotted 3px #999;
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1)
+}
